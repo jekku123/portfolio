@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta name="description" content="Portfolio page" />
+    <meta name="author" content="Jesse Manninen" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React, " />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d734d11b3b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js" defer></script>
+
+    <title>My portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h2 id="logo">Jesse Manninen</h2>
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#about-me">About me</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item">
+            <a href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-banner">
+        <h1>Welcome to my portfolio</h1>
+      </section>
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards-container">
+          <div class="project-card">
+            <div class="box">Image will be here</div>
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit</p>
+            <a href="#">See more</a>
+          </div>
+          <div class="project-card">
+            <div class="box">Image will be here</div>
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit</p>
+            <a href="#">See more</a>
+          </div>
+          <div class="project-card">
+            <div class="box">Image will be here</div>
+            <h3>Description</h3>
+            <p>Lorem ipsum dolor sit</p>
+            <a href="#">See more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-me" id="about-me">
+        <h2>About me</h2>
+        <div class="box">Image will be here</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+          iusto rem fugit nisi quibusdam, illum rerum natus quod illo
+          sapiente, magni voluptatem amet explicabo quas officiis?
+          Itaque laudantium modi velit. Lorem ipsum dolor sit amet
+          consectetur
+        </p>
+
+        <p>
+          adipisicing elit. Qui iusto rem fugit nisi quibusdam, illum
+          rerum natus quod illo sapiente, magni voluptatem amet
+          explicabo quas officiis? Itaque laudantium modi velit. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Qui iusto
+          rem fugit nisi quibusdam, illum rerum natus quod illo
+          sapiente, magni voluptatem amet explicabo quas officiis?
+          Itaque laudantium modi velit. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Qui iusto
+        </p>
+
+        <p>
+          illum rerum natus quod illo sapiente, magni voluptatem amet
+          explicabo quas officiis? Itaque laudantium modi velit. Lorem
+          ipsum dolor sit rem fugit nisi quibusdam, amet consectetur
+          adipisicing elit. Qui iusto
+        </p>
+
+        <p>
+          rem fugit nisi quibusdam, illum rerum natus quod illo
+          sapiente, magni voluptatem amet explicabo quas officiis?
+          Itaque laudantium modi velit.
+        </p>
+      </section>
+
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skill-cards-container">
+          <div class="skill-card">
+            <i class="fa-brands fa-html5 fa-3x"></i>
+            <p>HTML5</p>
+            <progress class="skillbar" value="3" max="10">8</progress>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-css3-alt fa-3x"></i>
+            <p>CSS3</p>
+            <progress class="skillbar" value="2" max="10">8</progress>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-js fa-3x"></i>
+            <p>JavaScript</p>
+            <progress class="skillbar" value="5" max="10">8</progress>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-react fa-3x"></i>
+            <p>React</p>
+            <progress class="skillbar" value="3" max="10">8</progress>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button id="backToTop" class="toTopBtn">
+      <span class="material-symbols-outlined"> arrow_upward </span>
+    </button>
+
+    <footer>
+      <div class="form-container">
+        <form novalidate autocomplete="off">
+          <h2>Contact</h2>
+
+          <div class="input-component">
+            <input
+              type="text"
+              placeholder=" "
+              id="0"
+              name="name"
+              class="input-field"
+            />
+            <label>Name</label>
+            <span class="error" id="name-error"></span>
+          </div>
+
+          <div class="input-component">
+            <input
+              type="email"
+              placeholder=" "
+              id="1"
+              name="email"
+              class="input-field"
+            />
+            <label>Email</label>
+            <span class="error" id="email-error"></span>
+          </div>
+
+          <div class="input-component">
+            <textarea
+              name="message"
+              placeholder=" "
+              id="2"
+              class="input-field"
+            ></textarea>
+            <label>Message</label>
+            <span class="error" id="message-error"></span>
+          </div>
+
+          <button type="submit" class="sub-btn">Submit</button>
+        </form>
+      </div>
+
+      <p>copyright JM-productions</p>
+    </footer>
+  </body>
+</html>
