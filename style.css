@@ -6,7 +6,7 @@
 }
 
 :root {
-  --light-color: #f4f4f4;
+  --light-color: rgb(250, 241, 228);
   --font: "Montserrat", sans-serif;
 }
 
@@ -43,12 +43,12 @@ header {
   left: 0;
   width: 100%;
   color: var(--light-color);
-  background-color: none;
+  background: none;
   z-index: 2;
 }
 
 #logo {
-  cursor: pointer;
+  text-shadow: 0 0 2px var(--light-color);
 }
 
 .nav-menu {
@@ -60,7 +60,7 @@ header {
 
 .nav-item {
   list-style: none;
-  background-color: none;
+  background: none;
 }
 
 .nav-menu li {
@@ -75,7 +75,9 @@ header {
 }
 
 .nav-menu li a:hover {
-  font-size: 1.4em;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 0 0 3px var(--light-color);
 }
 
 .burger {
@@ -112,18 +114,38 @@ section h2 {
 .hero-banner {
   display: flex;
   justify-content: center;
-  height: 650px;
+  height: 100vh;
   align-items: center;
   padding: 0;
   background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/2692.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-size: 2.5rem;
   color: var(--light-color);
+  animation-name: textglow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textglow {
+  0% {
+    text-shadow: 0px 0px 1px var(--light-color);
+  }
+  50% {
+    color: white;
+    text-shadow: 0px 0px 8px var(--light-color);
+  }
+
+  100% {
+    text-shadow: 0px 0px 1px var(--light-color);
+  }
 }
 
 .hero-banner::after {
   content: "";
   width: 100%;
-  height: 650px;
+  height: 100vh;
   background-image: linear-gradient(
     to top,
     rgb(0, 0, 0),
@@ -217,12 +239,16 @@ section h2 {
   color: black;
   box-shadow: 0 0 10px coral;
   background-color: coral;
-  font-size: inherit;
-  font-family: inherit;
-  display: none;
+  opacity: 0;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  transition: 0.3s ease;
+}
+
+.toTopBtn.active {
+  opacity: 1;
+  transition: 0.3s ease;
 }
 
 .material-symbols-outlined {
@@ -364,7 +390,8 @@ textarea:focus {
   outline: none !important;
   box-shadow: 0 0 20px var(--light-color);
 }
-*/ .btn {
+
+.btn {
   width: 200px;
   height: 50px;
   margin: 30px;
@@ -483,10 +510,6 @@ textarea:focus {
     bottom: 1rem;
     right: 1rem;
   }
-
-  /* form {
-    width: 60vw;
-  } */
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1000px) {

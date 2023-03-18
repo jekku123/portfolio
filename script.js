@@ -28,7 +28,8 @@ const handleForm = (e) => {
   let isValid;
 
   if (name === "name") isValid = !value.length || value.length > 2;
-  if (name === "email") isValid = !value.length || !!value.match(emailRegex);
+  if (name === "email")
+    isValid = !value.length || !!value.match(emailRegex);
   if (name === "message") isValid = !value.length || value.length > 1;
 
   errors.forEach((error) => {
@@ -40,7 +41,8 @@ const handleForm = (e) => {
         inputFields[+id].className = "input-field invalid";
         if (name === "name")
           error.textContent = "Name must be atleast 3 characters";
-        if (name === "email") error.textContent = "Invalid email address";
+        if (name === "email")
+          error.textContent = "Invalid email address";
         if (name === "message")
           error.textContent = "Message must be atleast 2 characters";
       }
@@ -109,7 +111,10 @@ links.forEach((link) =>
 /* BURGER END */
 
 window.addEventListener("scroll", () => {
-  if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
+  if (
+    document.documentElement.scrollTop > window.innerHeight - 100 ||
+    document.body.scrollTop > window.innerHeight - 100
+  ) {
     header.style.background = "black";
     menu.style.background = "black";
   } else {
@@ -118,12 +123,12 @@ window.addEventListener("scroll", () => {
   }
 
   if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
+    document.body.scrollTop > 550 ||
+    document.documentElement.scrollTop > 550
   ) {
-    toTopBtn.style.display = "block";
+    toTopBtn.classList.add("active");
   } else {
-    toTopBtn.style.display = "none";
+    toTopBtn.classList.remove("active");
   }
 });
 
