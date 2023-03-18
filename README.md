@@ -18,4 +18,4 @@ This project was built with:
 
 Jesse Manninen
 
-- Github - [@kapshtak](https://github.com/jekku123)
+- Github - [@jekku123](https://github.com/jekku123)
