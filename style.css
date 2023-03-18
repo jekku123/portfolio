@@ -117,7 +117,7 @@ section h2 {
   height: 100vh;
   align-items: center;
   padding: 0;
-  background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/2692.jpg");
+  background-image: url("/assets/hero_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
