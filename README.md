@@ -12,7 +12,7 @@ This project was built with:
 
 ## Links
 
-- Live Site: [portfolio page](https://public.bc.fi/s2300101/Portfolio)
+- Live Site[here](https://public.bc.fi/s2300101/Portfolio)
 
 ## Author
 
