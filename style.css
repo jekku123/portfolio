@@ -6,7 +6,10 @@
 }
 
 :root {
+  /* --light-color: #faf1e4; */
   --light-color: #faf1e4;
+  --dark-color: black;
+  --accent-color: coral;
   --font: "Montserrat", sans-serif;
 }
 
@@ -103,7 +106,7 @@ section {
 }
 
 section:nth-child(2n + 3) {
-  background-color: black;
+  background-color: var(--dark-color);
   color: var(--light-color);
 }
 
@@ -189,19 +192,19 @@ section h2 {
 .project-card .box {
   width: 100%;
   height: 200px;
-  background-color: black;
+  background-color: var(--dark-color);
   color: var(--light-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid var(--dark-color);
 }
 
 .about-me .box {
   width: 200px;
   height: 150px;
   background-color: var(--light-color);
-  color: black;
+  color: var(--dark-color);
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -223,7 +226,7 @@ section h2 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: black;
+  background-color: var(--dark-color);
   color: var(--light-color);
   margin: 20px;
   box-shadow: 5px 5px 5px grey;
@@ -231,7 +234,7 @@ section h2 {
 }
 
 .skillbar {
-  accent-color: coral;
+  accent-color: var(--accent-color);
 }
 
 /* FOOTER */
@@ -241,9 +244,9 @@ section h2 {
   height: 80px;
   border: none;
   border-radius: 50%;
-  color: black;
-  box-shadow: 0 0 10px coral;
-  background-color: coral;
+  color: var(--dark-color);
+  box-shadow: 0 0 10px var(--accent-color);
+  background-color: var(--accent-color);
   opacity: 0;
   position: fixed;
   bottom: 2rem;
@@ -267,7 +270,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 30px;
-  background-color: black;
+  background-color: var(--dark-color);
   color: var(--light-color);
 }
 
@@ -291,7 +294,7 @@ form h2 {
 }
 
 label {
-  color: black;
+  color: var(--dark-color);
   position: absolute;
   left: 15px;
   top: 15px;
@@ -360,7 +363,7 @@ textarea:focus.invalid {
 }
 
 .sub-btn {
-  background: linear-gradient(coral, black);
+  background: linear-gradient(var(--accent-color), var(--dark-color));
   color: rgb(242, 233, 214);
   width: 150px;
   height: 40px;
@@ -380,7 +383,7 @@ textarea:focus.invalid {
 }
 
 .sub-btn:active {
-  background: linear-gradient(rgb(251, 160, 127), black);
+  background: linear-gradient(rgb(251, 160, 127), var(--dark-color));
   font-size: 1.3rem;
   font-weight: bold;
   box-shadow: 0 0 30px var(--light-color);
@@ -398,7 +401,7 @@ textarea:focus {
   margin: 30px;
   border-radius: 5px;
   border: none;
-  background-color: coral;
+  background-color: var(--accent-color);
   color: var(--light-color);
   font-size: 18px;
   cursor: pointer;
@@ -406,7 +409,7 @@ textarea:focus {
 }
 
 .btn:hover {
-  color: black;
+  color: var(--dark-color);
   font-size: 19px;
 }
 
@@ -459,7 +462,7 @@ textarea:focus {
   }
 
   .nav-menu.active {
-    background-color: black;
+    background-color: var(--dark-color);
     transition: 0.5s ease;
     visibility: visible;
     width: 100%;
