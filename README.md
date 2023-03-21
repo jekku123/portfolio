@@ -10,6 +10,10 @@ This project was built with:
 - CSS3
 - JavaScript
 
+Header has animated burger menu.
+
+Footer has controlled form with error handling.
+
 ## Links
 
 - Live site: [here](https://public.bc.fi/s2300208/portfolio/)
